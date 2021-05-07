@@ -19,7 +19,7 @@
 // }
 
 .site-footer{
-    background-color: black;
+    background-color: rgb(26, 25, 25);
     position: relative;
     // top: 100px;
     width: 100vw;
@@ -31,6 +31,7 @@
         justify-content: center;
         section{
             margin-right: 20px;
+            font-size: 0.9rem;
         }
     }
 }
