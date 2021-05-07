@@ -1128,6 +1128,10 @@ body.home {
   overflow-x: hidden;
 }
 
+.site-main {
+  height: 100%;
+}
+
 .home #primary {
   width: 100vw;
   margin: 0;
@@ -1677,7 +1681,6 @@ main {
 .site-footer {
   background-color: black;
   position: relative;
-  top: 100px;
   width: 100vw;
   color: white;
 }
