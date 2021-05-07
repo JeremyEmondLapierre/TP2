@@ -176,7 +176,7 @@ function theme_jel_scripts() {
 		wp_enqueue_script( 'theme-jel-slider');
 		wp_enqueue_script( 'theme-jel-rest-api');
 		wp_localize_script('theme-jel-rest-api', 'monObjJS', array(
-			'nonce' => wp_create_nonce("wp_rest"),
+			'nonce' => wp_create_nonce( 'wp_rest' ),
 			'URLDomaine' => get_site_url()
 		));
 	}

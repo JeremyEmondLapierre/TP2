@@ -1,0 +1,74 @@
+h1.page-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-shadow: 3px 5px 2px #aca9a9;
+}
+
+.site-title{
+    margin-bottom: 0px;
+    
+    font-weight: bold;
+    font-size:  clamp(1.2rem, #{"-0.875rem + 8.333vw"}, 2.5rem);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    a{
+    background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, black, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size:  clamp(1.2rem, #{"-0.875rem + 8.333vw"}, 2.5rem);
+  font-family: $font__sitetitle;
+  animation: revelation 3000ms ease-in-out forwards 200ms, briller 2500ms linear infinite 2000ms;
+    text-decoration: none;
+
+    &:hover{
+        color: black;
+    }
+    }
+}
+
+
+.site-description{
+    font-size:  clamp(.9rem, #{"-0.875rem + 8.333vw"}, 1.5rem);
+    margin-top: 0px;
+    font-family: 'Courrier';
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.entry-header, .page-header{
+    h1{
+        margin-bottom: 0px;
+        text-decoration: underline;
+        
+    }
+}
+.entry-title{
+    font-size: 3rem;
+    color: chocolate;
+}
+
+
+
+
+/* ------------------------------------------------------------------------- 
+ANIMATIONS DANS LA PAGE
+------------------------------------------------------------------------- */
+@keyframes revelation {
+    80%{
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @keyframes briller {
+    40% {
+      text-shadow: 0 0 8px #fff;
+    }
+  }

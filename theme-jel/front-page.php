@@ -67,14 +67,15 @@ get_header();
 			</section> <!-- Fin section cours -->
 		<!-- /////////////////////////////////////////////////////////
 		Formulaire d'ajot d'un article de catégorie Nouvelles
-		////////////////////////////////////////////////////////// -->		
+		////////////////////////////////////////////////////////// -->
+		<?php if (current_user_can('administrator')) : ?>		
 			<section class="admin-rapid">
 				<h3>Ajouter un article de catégorie "Nouvelles"</h3>
 				<input type="text" name="title" placeholder="Titre">
 				<textarea name="content" placeholder="Contenu"></textarea>
 				<button id='bout-rapid'>Créer une nouvelle</button>
 			</section>
-
+		<?php endif; ?>
 
 
 			<section class="nouvelles">
