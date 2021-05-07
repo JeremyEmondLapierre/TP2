@@ -1654,6 +1654,11 @@ main {
   text-decoration: none !important;
 }
 
+.galerie .flip-card-back h2 {
+  font-size: 1rem;
+  border: none;
+}
+
 .galerie .flip-card-back a {
   color: wheat !important;
   text-decoration: none !important;
