@@ -1151,7 +1151,7 @@ body.home::after {
   body.home::after {
     clip-path: polygon(70% 0, 100% 0, 100% 100%, 60% 100%);
     background-color: wheat;
-    height: 625%;
+    height: 450%;
   }
 }
 
@@ -1671,6 +1671,7 @@ main {
 
 .admin-rapid textarea {
   width: 20vw;
+  margin: 10px;
 }
 
 ::-webkit-input-placeholder {
@@ -1756,6 +1757,32 @@ h1.page-title {
 
 .entry-content {
   margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.entry-content p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.entry-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.post-thumbnail {
+  display: none;
+}
+
+.entry-meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ------------------------------------------------------------------------- 

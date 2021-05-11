@@ -34,7 +34,7 @@ body.home::after{
         @include media-desktop{
             clip-path: polygon(70% 0, 100% 0, 100% 100%, 60% 100%);
             background-color: wheat;
-            height: 625%;
+            height: 450%;
         }
 }
 //Ajout d'un style au titre de chaque page
