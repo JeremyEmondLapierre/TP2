@@ -9,7 +9,7 @@
 {
    let maRequete = new XMLHttpRequest();
    console.log(maRequete)
-   maRequete.open('GET', monObjJS.URLDomaine + '/wp-json/wp/v2/posts?categories=11');
+   maRequete.open('GET', monObjJS.URLDomaine + '/wp-json/wp/v2/posts?categories=11&per_page=2');
    maRequete.onload = function () {
        console.log(maRequete)
        if (maRequete.status >= 200 && maRequete.status < 400) {

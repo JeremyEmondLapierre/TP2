@@ -1660,13 +1660,17 @@ main {
 --------------------------------------------- */
 .admin-rapid {
   display: flex !important;
-  justify-content: center !important;
   align-items: center !important;
+  justify-content: center !important;
   flex-direction: column !important;
+  width: 50vw;
+  margin: auto;
+  background-color: #b8b7b7;
+  padding: 20px;
 }
 
 .admin-rapid textarea {
-  width: 90vw;
+  width: 20vw;
 }
 
 ::-webkit-input-placeholder {

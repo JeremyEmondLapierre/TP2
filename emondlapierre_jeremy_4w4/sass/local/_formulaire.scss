@@ -1,10 +1,14 @@
 .admin-rapid{
     display: flex !important;
-    justify-content: center !important;
     align-items: center !important;
+    justify-content: center !important;
     flex-direction: column !important;
+    width: 50vw;
+    margin: auto;
+    background-color: rgb(184, 183, 183);
+    padding: 20px;
     textarea{
-        width: 90vw;
+        width: 20vw;
     }
 }
 ::-webkit-input-placeholder {
