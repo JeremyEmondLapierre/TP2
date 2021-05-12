@@ -10,6 +10,10 @@
 get_header();
 ?>
 	<main id="primary" class="site-main">
+	<section class="nouvelles">
+				<!-- button id="bout_nouvelles">Dernières Nouvelles</button -->
+				<section></section>
+			</section>
 	
 
 	
@@ -78,10 +82,7 @@ get_header();
 		<?php endif; ?>
 
 
-			<section class="nouvelles">
-				<!-- button id="bout_nouvelles">Dernières Nouvelles</button -->
-				<section></section>
-			</section>
+			
 		<?php endif; ?>
 
 	</main><!-- #main -->

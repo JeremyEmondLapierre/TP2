@@ -1261,9 +1261,12 @@ svg {
 }
 
 .nouvelles {
-  margin: 2% 4% 2% 3%;
   padding: 30px;
   border: dashed 3px black;
+  background-color: #a33e3e;
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
 }
 
 .nouvelles section {
@@ -1271,6 +1274,7 @@ svg {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: white;
 }
 
 /* Carrousel
