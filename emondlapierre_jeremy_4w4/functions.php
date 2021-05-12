@@ -145,6 +145,7 @@ function theme_jel_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+
 }
 add_action( 'widgets_init', 'theme_jel_widgets_init' );
 
