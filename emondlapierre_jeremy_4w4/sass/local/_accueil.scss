@@ -156,8 +156,9 @@ svg{
 
 .nouvelles{
     padding: 30px;
-    border: dashed 3px black;
-    background-color: rgb(163, 62, 62);
+    border: 2px solid white;
+    background-color: rgb(206, 96, 96);
+    border-radius: 10px;
     width: 50%;
     margin: auto;
     margin-top: 10px;
@@ -167,5 +168,26 @@ svg{
     align-items: center;
     flex-direction: column;
     color: white;
+    h2{
+    width: 18ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 2em;
+    }
+
     }
 }
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
