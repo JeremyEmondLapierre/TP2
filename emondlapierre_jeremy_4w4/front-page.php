@@ -74,10 +74,10 @@ get_header();
 		////////////////////////////////////////////////////////// -->
 		<?php if (current_user_can('administrator')) : ?>		
 			<section class="admin-rapid">
-				<h3>Ajouter un article de catégorie "Nouvelles"</h3>
+				<h3>Ajouter une alerte en haut de la page!</h3>
 				<input type="text" name="title" placeholder="Titre">
 				<textarea name="content" placeholder="Contenu"></textarea>
-				<button id='bout-rapid'>Créer une nouvelle</button>
+				<button id='bout-rapid'>Créer une alerte</button>
 			</section>
 		<?php endif; ?>
 
