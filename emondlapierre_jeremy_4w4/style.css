@@ -1151,7 +1151,7 @@ body.home::after {
   body.home::after {
     clip-path: polygon(70% 0, 100% 0, 100% 100%, 60% 100%);
     background-color: wheat;
-    height: 450%;
+    height: 600%;
   }
 }
 
@@ -1284,6 +1284,8 @@ svg {
   margin: auto;
   border: 2px dashed black;
   padding: 20px;
+  background: white;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(199, 198, 139, 0.616684) 100%);
 }
 
 .nouvelles section {
@@ -1705,13 +1707,36 @@ main {
   flex-direction: column !important;
   width: 50vw;
   margin: auto;
+  background: #b53600;
+  background: radial-gradient(circle, #b53600 0%, #5e5e5e 100%);
+  padding: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.admin-rapid textarea {
+  width: 20vw;
+  margin: 10px;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.admin-nouvelles {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+  width: 45vw;
+  margin: auto;
   background: #dbaa5a;
   background: radial-gradient(circle, #dbaa5a 0%, #676767 100%);
   padding: 20px;
   margin-bottom: 20px;
 }
 
-.admin-rapid textarea {
+.admin-nouvelles textarea {
   width: 20vw;
   margin: 10px;
 }
@@ -1819,7 +1844,8 @@ h1.page-title {
 }
 
 .post-thumbnail {
-  display: none;
+  margin: auto;
+  width: 95%;
 }
 
 .entry-meta {

@@ -5,6 +5,27 @@
     flex-direction: column !important;
     width: 50vw;
     margin: auto;
+    background: rgb(181,54,0);
+    background: radial-gradient(circle, rgba(181,54,0,1) 0%, rgba(94,94,94,1) 100%);
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white;
+    textarea{
+        width: 20vw;
+        margin: 10px;
+    }
+}
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+.admin-nouvelles{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    width: 45vw;
+    margin: auto;
     background: rgb(219,170,90);
     background: radial-gradient(circle, rgba(219,170,90,1) 0%, rgba(103,103,103,1) 100%);
     padding: 20px;
