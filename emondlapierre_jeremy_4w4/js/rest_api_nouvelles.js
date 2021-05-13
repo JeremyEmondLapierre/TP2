@@ -1,6 +1,6 @@
 (function(){
     // let bouton = document.getElementById('bout_nouvelles');
-    let alerte = document.querySelector('.alerte section');
+    let nouvelles = document.querySelector('.nouvelles section');
     // console.log(bouton.id);
 
     //bouton.addEventListener('mousedown', monAjax);
@@ -9,7 +9,7 @@
 {
    let maRequete = new XMLHttpRequest();
    console.log(maRequete)
-   maRequete.open('GET', monObjJS.URLDomaine + '/wp-json/wp/v2/posts?categories=14&per_page=1');
+   maRequete.open('GET', monObjJS.URLDomaine + '/wp-json/wp/v2/posts?categories=11&per_page=3');
    maRequete.onload = function () {
        console.log(maRequete)
        if (maRequete.status >= 200 && maRequete.status < 400) {
@@ -19,7 +19,7 @@
             chaine += '<h2>' + elm.title.rendered + '</h2>';
             chaine +=  elm.content.rendered
            }
-           alerte.innerHTML = chaine;
+           nouvelles.innerHTML = chaine;
         }
        
         else {
@@ -34,13 +34,13 @@
 /* ////////////////////////////////////////////////////////////
 Traitement de l'ajout d'un article de catégorie Nouvelles
 //////////////////////////////////////////////////////////// */
-bouton_ajout = document.getElementById('bout-rapid');
+bouton_ajout = document.getElementById('bout-nouvelles');
 bouton_ajout.addEventListener('mousedown', function(){
     let monArticle = {
-        "title" : document.querySelector('.admin-rapid [name="title"]').value,
-        "content" : document.querySelector('.admin-rapid [name="content"]').value,
+        "title" : document.querySelector('.admin-nouvelles [name="title"]').value,
+        "content" : document.querySelector('.admin-nouvelles [name="content"]').value,
         "status" : "publish",
-        "categories" : [14]
+        "categories" : [11]
     }
 
     console.log(JSON.stringify(monArticle));
@@ -53,8 +53,8 @@ bouton_ajout.addEventListener('mousedown', function(){
     creerArticle.onreadystatechange = function(){
         if(creerArticle.readyState == 4){
             if(creerArticle.status == 201){
-                document.querySelector('.admin-rapid [name="title"]').value = '';
-                document.querySelector('.admin-rapid [name="content"]').value = '';
+                document.querySelector('.admin-nouvelles [name="title"]').value = '';
+                document.querySelector('.admin-nouvelles [name="content"]').value = '';
             }
             else{
                 alert ("Erreur réessayer");

@@ -10,7 +10,7 @@
 get_header();
 ?>
 	<main id="primary" class="site-main">
-	<section class="nouvelles">
+	<section class="alerte">
 				<!-- button id="bout_nouvelles">Dernières Nouvelles</button -->
 				<section></section>
 			</section>
@@ -72,13 +72,25 @@ get_header();
 		<!-- /////////////////////////////////////////////////////////
 		Formulaire d'ajot d'un article de catégorie Nouvelles
 		////////////////////////////////////////////////////////// -->
-		<?php if (current_user_can('administrator')) : ?>		
+		<section class="nouvelles">
+				<section></section>
+			</section>
+			
+		<?php if (current_user_can('administrator')) : ?>
+		<section class="formulaire">		
 			<section class="admin-rapid">
 				<h3>Ajouter une alerte en haut de la page!</h3>
 				<input type="text" name="title" placeholder="Titre">
 				<textarea name="content" placeholder="Contenu"></textarea>
 				<button id='bout-rapid'>Créer une alerte</button>
 			</section>
+			<section class="admin-nouvelles">
+				<h3>Ajouter une nouvelle au bas de la page!</h3>
+				<input type="text" name="title" placeholder="Titre">
+				<textarea name="content" placeholder="Contenu"></textarea>
+				<button id='bout-nouvelles'>Créer une nouvelle</button>
+			</section>
+		</section>
 		<?php endif; ?>
 
 

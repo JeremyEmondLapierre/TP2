@@ -172,12 +172,18 @@ function theme_jel_scripts() {
 	wp_register_script( 'theme-jel-carrousel', get_template_directory_uri() . '/js/carrousel.js', array(), filemtime(get_template_directory() . "/carrousel.js"), 'all' );
 	wp_register_script( 'theme-jel-slider', get_template_directory_uri() . '/js/slider.js', array(), filemtime(get_template_directory() . "/slider.js"), 'all' );
 	wp_register_script( 'theme-jel-rest-api', get_template_directory_uri() . '/js/rest_api.js', array(), filemtime(get_template_directory() . "/rest-api.js"), 'true' );
+	wp_register_script( 'theme-jel-rest-api-nouvelles', get_template_directory_uri() . '/js/rest_api_nouvelles.js', array(), filemtime(get_template_directory() . "/rest-api_nouvelles.js"), 'true' );
 
 	if(is_front_page()){
 		wp_enqueue_script( 'theme-jel-carrousel');
 		wp_enqueue_script( 'theme-jel-slider');
 		wp_enqueue_script( 'theme-jel-rest-api');
+		wp_enqueue_script( 'theme-jel-rest-api-nouvelles');
 		wp_localize_script('theme-jel-rest-api', 'monObjJS', array(
+			'nonce' => wp_create_nonce( 'wp_rest' ),
+			'URLDomaine' => get_site_url()
+		));
+		wp_localize_script('theme-jel-rest-api-nouvelles', 'monObjJS', array(
 			'nonce' => wp_create_nonce( 'wp_rest' ),
 			'URLDomaine' => get_site_url()
 		));
