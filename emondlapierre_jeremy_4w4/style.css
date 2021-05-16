@@ -1271,7 +1271,7 @@ svg {
 }
 
 .alerte section h2 {
-  width: 18ch;
+  width: 20ch;
   animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -1707,8 +1707,9 @@ main {
   flex-direction: column !important;
   width: 50vw;
   margin: auto;
-  background: #b53600;
-  background: radial-gradient(circle, #b53600 0%, #5e5e5e 100%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background: #9e4018;
+  background: radial-gradient(circle, #9e4018 0%, #8b4646 100%);
   padding: 20px;
   margin-bottom: 20px;
   color: white;
@@ -1730,10 +1731,12 @@ main {
   flex-direction: column !important;
   width: 45vw;
   margin: auto;
-  background: #dbaa5a;
-  background: radial-gradient(circle, #dbaa5a 0%, #676767 100%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background: #b97a60;
+  background: radial-gradient(circle, #b97a60 0%, #654040 100%);
   padding: 20px;
   margin-bottom: 20px;
+  color: white;
 }
 
 .admin-nouvelles textarea {
@@ -1817,9 +1820,8 @@ h1.page-title {
 .entry-title {
   font-size: 3rem;
   color: #583c28;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 40%;
+  margin: auto;
   font-family: 'Chewy', cursive;
 }
 

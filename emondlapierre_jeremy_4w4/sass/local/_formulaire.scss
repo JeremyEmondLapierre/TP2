@@ -5,8 +5,9 @@
     flex-direction: column !important;
     width: 50vw;
     margin: auto;
-    background: rgb(181,54,0);
-    background: radial-gradient(circle, rgba(181,54,0,1) 0%, rgba(94,94,94,1) 100%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background: rgb(158,64,24);
+    background: radial-gradient(circle, rgba(158,64,24,1) 0%, rgba(139,70,70,1) 100%);
     padding: 20px;
     margin-bottom: 20px;
     color: white;
@@ -26,10 +27,12 @@
     flex-direction: column !important;
     width: 45vw;
     margin: auto;
-    background: rgb(219,170,90);
-    background: radial-gradient(circle, rgba(219,170,90,1) 0%, rgba(103,103,103,1) 100%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background: rgb(185,122,96);
+    background: radial-gradient(circle, rgba(185,122,96,1) 0%, rgba(101,64,64,1) 100%);
     padding: 20px;
     margin-bottom: 20px;
+    color:white ;
     textarea{
         width: 20vw;
         margin: 10px;
