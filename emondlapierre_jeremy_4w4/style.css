@@ -1262,6 +1262,10 @@ svg {
   margin-top: 10px;
 }
 
+.alerte:hover {
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
 .alerte section {
   display: flex;
   justify-content: center;
@@ -1283,6 +1287,7 @@ svg {
   width: 90%;
   margin: auto;
   border: 2px dashed black;
+  border-radius: 10px;
   padding: 20px;
   background: white;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(199, 198, 139, 0.616684) 100%);
@@ -1312,6 +1317,15 @@ svg {
 @keyframes blink {
   50% {
     border-color: transparent;
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
   }
 }
 
